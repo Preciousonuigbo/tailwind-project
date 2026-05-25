@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <!-- CSS linking -->
+    <link rel="stylesheet" href="./CSS/output.css">
+
+    <!-- font cdn -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+
+    <!-- Header -->
+    <header class="h-18 border-b border-black/60 w-full  items-center mx-auto">
+
+        <!-- nav links -->
+        <nav class="h-full w-full flex justify-between items-center relative bg-Dark-blue gap-8 ">
+
+            <div class="flex gap-1 justify-center items-center ml-4">
+
+                <span class="h-8 w-8 flex justify-center items-center bg-Light-blue rounded "><i class="fa-solid fa-bolt text-white"></i></span>
+                <span class="font-bold text-white">Nexus</span>
+            </div>
+
+            <!-- desktop -->
+             <div class="hidden md:flex items-center ">
+
+                <ul class="flex justify-around gap-12 text-white">
+
+                    <li class="hover:scale-120"><a href="#home">Home</a></li>
+
+                    <li class="hover:scale-120"><a href="#services" >Services</a></li>
+
+                    <li class="hover:scale-120"><a href="#about" >About</a></li>
+
+                    <li class="hover:scale-120"><a href="#contact" >Contact</a></li>
+
+                </ul>
+            </div>
+
+            <div>
+                <a href="#" class="text-white py-2 px-8 rounded bg-Light-blue hover:scale-110 font-bold hidden md:flex">Get Started</a>
+            </div>
+
+            <!-- mobile drop-down -->
+
+            
+           
+            <div class=" text-white mr-4">
+                <button class="md:hidden">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+                <ul class="absolute top-full left-0 h-[calc(100vh-4.5rem)] w-3/5 max-w-60 border-r border-t  border-black/30 flex-col gap-6 justify-center items-center bg-blue-950 text-white hidden">
+                    <li>Home</li>
+                    <li>Service</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                    <li><a href="#" class="text-white py-2 px-8 mr-4 rounded bg-Light-blue">Get Started</a></li>
+                </ul>
+            </div>
+            
+        </nav>
+
+    </header>
+
+    <!-- 
+    =============================
+    HERO SECTION
+    =============================
+    -->
+    <section class="h-60vh w-full  bg-Dark-blue" id="home">
+
+        <div class="flex flex-col md:flex-row gap-8 w-9/10 mx-auto justify-center">
+            <div class="flex flex-col gap-4 md:w-1/2 justify-center items-center md:items-start md:mb-12">
+                <h1 class="text-4xl font-bold mt-12 md:w-9/10 text-center md:text-start">  
+                    <span class="text-white">Build Your</span>
+                    <span class="text-Light-blue">Digital</span>
+                    <span class="text-white">Future</span>
+                </h1>
+                <P class="text-white md:w-9/10 text-center md:text-start">Transform your business with cutting-edge solutions that drive growth and innovation in the digital landscape.</P>
+
+                <div class="flex flex-col gap-4 md:flex-row items-center">
+                    <a href="#" class="text-white py-2 px-6 mr-4 rounded bg-Light-blue flex w-fit hover:scale-105 hover:bg-amber-600 hover:text-black">Start Your Journey</a>
+
+                    <a href="#" class="text-white py-2 px-6 border border-white/30 rounded w-fit hover:scale-105 hover:bg-amber-600 hover:text-black">Learn More</a>
+                </div>
+            </div>
+
+            <!-- Hero image -->
+            <div class="md:mt-12 mb-12 md:w-1/2 justify-center">
+                <img src="./images/hero-image.png" alt="Image of a Laptop" class="w-full h-80 object-cover rounded-2xl">
+            </div>
+        </div>
+    </section>
+
+        <!-- 
+    =======================================
+                Services  
+    =======================================
+    -->
+        <section class="w-full bg-Blue-shade py-16" id="services" >
+            <div class="w-9/10 max-w-7xl mx-auto flex flex-col gap-6">
+                <div class="flex flex-col gap-2 items-center">
+                    <h2 class="font-bold text-2xl lg:text-3xl 2xl:text-4xl text-white">Our Services</h2>
+
+                    <p class=" font-medium text-center w-9/10 max-w-120 2xl:text-lg text-white/70">
+                        We provide comprehensive solutions to help your business thrive in this digital age.
+                    </p>
+                </div>
+
+
+                <!-- service card -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+                    <!-- First card -->
+                    <div class="flex flex-col gap-4 border border-white/10 py-8 px-4 rounded-2xl shadow-2xl  bg-Blue-shade hover:scale-110">
+                        <span class="self-start w-10 h-10 flex justify-center items-center bg-Light-blue text-white rounded-lg">
+                            <i class="fa-solid fa-code"></i>
+                        </span>
+
+                        <h3 class="font-bold text-white"> Web Development </h3>
+
+                        <p class=" text-white/70">
+                            Custom websites and web applications built with modern technologies for optimal performance.
+                        </p>
+                    </div>
+
+                    <!-- Second card -->
+                    <div class="flex flex-col gap-4 border border-white/10 py-8 px-4 rounded-2xl shadow-2xl  bg-Blue-shade hover:scale-110">
+                        <span class="self-start w-10 h-10 flex justify-center items-center bg-Green text-white rounded-lg">
+                            <i class="fa-solid fa-mobile-screen"></i>
+                        </span>
+
+                        <h3 class="font-bold text-white">Mobile Apps</h3>
+
+                        <p class=" text-white/70">
+                            Native and cross-platform mobile applications that delivers exceptional user experiences.
+                        </p>
+                    </div>
+
+                    <!-- Third Card -->
+                    <div class="flex flex-col gap-4 border border-white/10 py-8 px-4 rounded-2xl shadow-2xl  bg-Blue-shade hover:scale-110">
+                        <span class="self-start w-10 h-10 flex justify-center items-center bg-Purple rounded-lg">
+                            <i class="fa-solid fa-chart-line text-white"></i>
+                        </span>
+
+                        <h3 class="font-bold text-white">Financial Consulting</h3>
+
+                        <p class=" text-white/70">
+                            Strategic marketing campaigns that boost your online presence and drive conversions.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 
+        ===================================================
+        About Section
+        ===================================================
+        -->
+        <section class="w-full bg-Dark-blue py-16 " id="about">
+            <div class="flex flex-col md:flex-row gap-8 w-9/10 mx-auto justify-center">
+                <div class="">
+                    <img src="./images/about-image.png" alt="Image of people in an office space" class="w-full h-100 object-cover rounded-2xl">
+                </div>
+
+                <div class="md:w-1/2 flex flex-col gap-4 justify-center">
+                    <h2 class="font-bold text-2xl lg:text-3xl 2xl:text-4xl text-white">About Nexus</h2>
+
+                    <p class="font-medium w-9/10 max-w-120 2xl:text-lg text-white/70">We are a forward-thinking technology company dedicated to helping businesses navigate the digital transformation journey. With yearsof experience and a passion for innovation, we deliver solutions that matter.</p>
+
+                    <div class="flex gap-12 ">
+                        <div class="flex flex-col gap-2">
+                            <span class="font-bold text-3xl text-Light-blue">150+</span>
+                            <span class="text-white/70">Projects Completed</span>
+                        </div>
+
+                        <div class="flex flex-col gap-2">
+                            <span class="font-bold text-3xl text-green-500">98%</span>
+                            <span class="text-white/70">Client Satisfaction</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- 
+        ==========================================
+                       Contact section
+         ==========================================
+        -->
+        <section class="bg-Blue-shade w-full py-16 flex flex-col gap-6" id="contact">
+            <div class="flex flex-col gap-2 w-9/10 justify-center items-center mx-auto text-center">
+
+                <!-- contact heading -->
+                <h2 class="font-bold text-3xl text-white">Get In Touch</h2>
+                <p class="font-medium w-9/10 max-w-120 2xl:text-lg text-white/70">Ready to start your project? Let's discuss how we can help you achieve your goals.</p>
+            </div>
+
+
+            <!-- contact details -->
+            <div class="flex flex-col md:flex-row gap-12 w-4/5 md:w-3/5 mx-auto bg-Blue-shade shadow-2xl py-8 px-8 rounded-xl border border-white/10  ">
+                <div class="flex flex-col gap-4 w-full">
+                    <div class="flex gap-2">
+                        <span class="text-Light-blue"><i class="fa-solid fa-envelope"></i></span>
+                        <p class="text-white">hello@nexus.com</p>
+                    </div>
+                    <div class="flex gap-2">
+                        <span class="text-Light-blue"><i class="fa-solid fa-phone"></i></span>
+                        <p class="text-white">+1 (555) 123-4567</p>
+                    </div>
+                    <div class="flex gap-2">
+                        <span class="text-Light-blue"><i class="fa-solid fa-location-dot"></i></span>
+                        <p class="text-white">123 Business Ave, Tech City</p>
+                    </div>
+                </div>
+
+                <form class=" flex flex-col gap-6 items-center justify-center w-full">
+                    <input type="text" placeholder="Your Name" class=" text-white/70 h-10 px-3 rounded bg-gray-700 w-full text-sm outline-none  focus:border-Light-blue">
+
+                    <input type="email" placeholder="Your Email" class=" text-white/70 h-10 px-3 rounded bg-gray-700 w-full text-sm border-transparent outline-none focus:border-blue-700">
+
+                    <textarea placeholder="Your Message" rows="4" class="w-full text-white/70 px-3 rounded bg-gray-700 text-sm border-transparent outline-none focus:border-blue-700 px-"></textarea>
+
+                    <button type="submit" class="w-full bg-Light-blue text-white font-bold text-sm hover:bg-amber-400 hover:text-black py-3 rounded-lg ">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <footer class="bg-slate-800 w-full h-fit flex flex-col items-center gap-4 justify-around py-4 md:flex-row">
+            <div class="flex gap-1">
+
+                <span class="h-8 w-8 flex justify-center items-center bg-Light-blue  rounded "><i class="fa-solid fa-bolt text-white"></i></span>
+
+                <span class="font-bold text-white">Nexus</span>
+            </div>
+
+            <div class="text-gray-600 font-bold">
+                <small>
+                    &copy; 2024 Nexus. All rights reserved.
+                </small>
+            </div>
+
+            <div class="text-gray-700">
+                <span><i class="fa-brands fa-twitter"></i></span>
+                <span><i class="fa-brands fa-linkedin"></i></span>
+                <span><i class="fa-brands fa-github"></i></span>
+            </div>
+
+        </footer>
+</body>
+</html>

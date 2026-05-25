@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@theme {
+    --color-Light-blue:#3b82f6;
+    --color-Blue-shade: #152032;
+    --color-Dark-blue: #0f172a;
+    --color-Purple: #a855f7;
+    --color-Green: #22c55e;
+}
+
+.input {
+    @apply text-white/70 h-10 px-3 rounded bg-gray-700
+}
+
+.card {
+   @apply flex flex-col gap-4 border border-black/10 py-8 px-4 rounded-2xl shadow-2xl  bg-Blue-shade hover:scale-110
+}
